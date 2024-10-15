@@ -1,0 +1,50 @@
+[{
+    "condition": "The evidence level is either 'systematic review' or 'meta-analysis'.",
+    "category": "High Quality Study",
+    "agent_context": "Determine if the paper evidence is systematic review or meta analysis. Add this to evidence_level."
+},
+{
+    "condition": "The evidence level is 'RCT'.",
+    "category": "Moderate Quality Study",
+    "agent_context": "Determine if the paper evidence is a randomized controlled trial (RCT). Add this to evidence_level."
+},
+{
+    "condition": "The evidence level is 'expert opinion'.",
+    "category": "Low Quality Study",
+    "agent_context": "Determine if the paper evidence is based on expert opinion. Add this to evidence_level."
+},
+{
+    "condition": "The patient group is 'adolescent'.",
+    "category": "Adolescent Study",
+    "agent_context": "Determine if the study focuses on an adolescent population. Add this to patient_group."
+},
+{
+    "condition": "The patient group is 'adult'.",
+    "category": "Adult Study",
+    "agent_context": "Determine if the study focuses on an adult population. Add this to patient_group."
+},
+{
+    "condition": "The patient group is 'elderly'.",
+    "category": "Elderly Study",
+    "agent_context": "Determine if the study focuses on an elderly population. Add this to patient_group."
+},
+{
+    "condition": "The disorder subtype is 'depression' and the treatment type is 'medication'.",
+    "category": "Depression and Medication",
+    "agent_context": "Determine if the study examines the use of medication to treat depression. Add this to treatment_type and disorder_subtype."
+},
+{
+    "condition": "The disorder subtype is 'depression' and the treatment type is 'psychotherapy'.",
+    "category": "Psychotherapy for Depression",
+    "agent_context": "Determine if the study examines the use of psychotherapy to treat depression. Add this to treatment_type and disorder_subtype."
+},
+{
+    "condition": "The treatment type is 'exercise' and the disorder subtype is 'depression'.",
+    "category": "Exercise for Depression",
+    "agent_context": "Determine if the study examines the use of exercise as a treatment for depression. Add this to treatment_type and disorder_subtype."
+},
+{
+    "condition": "The treatment type is 'mindfulness' and the disorder subtype is 'anxiety'.",
+    "category": "Mindfulness-Based Intervention for Anxiety",
+    "agent_context": "Determine if the study examines the use of mindfulness to treat anxiety. Add this to treatment_type and disorder_subtype."
+}]
