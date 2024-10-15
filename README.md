@@ -1,10 +1,10 @@
-# Literature Review Policy Engine - README
+# Literature Review Policy Engine
 
 This README provides an overview of how to use the Literature Review Policy Engine to evaluate research papers based on custom policies, generate summaries, and create reports.
 
 ## Requirements
 
-- Python 3.8+
+- Python 3.12+
 - Virtual environment (optional but recommended)
 
 ### Python Packages
