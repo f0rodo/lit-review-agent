@@ -30,6 +30,9 @@ The main script (`lit_review_policy.py`) can be used to parse research papers, e
 
 ### Arguments
 
+- `--full_pipeline`
+  - Runs the full pipeline to parse papers, evaluate conditions, and generate summaries.
+
 - `--clear [conditions|parsed]`
   - Clears the cached conditions or parsed summaries from the respective folders.
 
@@ -85,7 +88,7 @@ The script will use the updated policies to categorize papers accordingly.
 ## Example Workflow
 
 1. **Add PDFs**: Place the research papers in the `./literature/pdfs` folder.
-2. **Run Script**: Use `python lit_review_policy.py` with the appropriate arguments to parse the papers and generate summaries.
+2. **Run Script**: Use `python lit_review_policy.py --full_pipeline` with the appropriate arguments to parse the papers and generate summaries.
 3. **Generate Report**: After processing the papers, generate a report using `--report` to get an overview of the categorization.
 
 ## Customization
