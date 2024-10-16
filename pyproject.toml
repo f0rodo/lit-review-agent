@@ -11,6 +11,7 @@ openai = "^1.51.2"
 pydantic = "^2.9.2"
 pymupdf = "^1.24.11"
 pandas = "^2.2.3"
+paperscraper = "^0.2.13"
 
 
 [build-system]
