@@ -2,6 +2,8 @@
 
 This README provides an overview of how to use the Literature Review Policy Engine to evaluate research papers based on custom policies, generate summaries, and create reports.
 
+![Showing an image of a spreadsheet and how you can filter based on policy conditions.](./docs/ExampleReport.png "Lit Review Report")
+
 ## Requirements
 
 - Python 3.12+
