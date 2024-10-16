@@ -101,6 +101,44 @@ The script will use the updated policies to categorize papers accordingly.
 - **Validation Errors**: Ensure that the JSON structure in `policy.json` matches the format expected by the script.
 - **API Errors**: Make sure your OpenAI API key is correctly set up and has access to the required models.
 
+
+# Paper Scraper Module
+
+This module provides functionality to scrape research papers from multiple sources based on a keyword search and optionally download the corresponding PDFs. It supports sources like PubMed, arXiv, bioRxiv, medRxiv, chemRxiv, and Google Scholar.
+
+
+## Usage
+The script can be used to scrape papers and optionally download PDFs.
+
+### Command Line Arguments
+- `--query` (required): Keywords for the paper search. Accepts multiple keywords.
+- `--sources` (optional): Specify sources to scrape from. Options include `pubmed`, `arxiv`, `biorxiv`, `medrxiv`, `chemrxiv`, and `scholar`. Default is all sources. **NOTE** There is a bug with every source but arxiv
+- `--download_pdfs` (optional): Use this flag to download PDFs after scraping the metadata.
+
+### Example
+To scrape papers related to "COVID-19" and "Artificial Intelligence" from arXiv, and download their PDFs:
+
+```sh
+python fetch_papers.py --query "COVID-19" "Artificial Intelligence" --sources arxiv --download_pdfs
+```
+
+This command will:
+1. Scrape metadata from arXiv using the specified keywords.
+2. Save the metadata dumps in `literature/dumps/arxiv`.
+3. Download the PDFs for the retrieved papers and store them in `literature/pdfs`.
+
+## Logging
+The script uses Python's logging module to provide information during the scraping and downloading process.
+- Logs are displayed on the console, showing the progress of the scraping and PDF downloads.
+
+## Troubleshooting
+- **ModuleNotFoundError: No module named 'pkg_resources'**: This error indicates that `setuptools` is not installed. Install it using:
+  ```sh
+  pip install setuptools
+  ```
+
+
+
 ## License
 
 This project is licensed under the MIT License.
